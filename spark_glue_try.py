@@ -8,9 +8,9 @@ import pandas as pd
 spark = SparkSession.builder.appName("RimacHackathon").getOrCreate()
 
 # Define the paths
-large_csv_path = 's3://your-bucket/path/to/df_ambulatorio_nasty.csv'
-catalogo_cie10_path = 's3://your-bucket/path/to/CATALOGO_CIE10.csv'
-save_directory = 's3://your-bucket/path/to/save_directory'
+large_csv_path = 's3://acul/df_ambulatorio_nasty.csv'
+catalogo_cie10_path = 's3://diccionarios/CATALOGO_CIE10.csv'
+save_directory = 's3://limpio/csv/save_directory'
 
 # Ensure the save directory exists
 if not os.path.exists(save_directory):
